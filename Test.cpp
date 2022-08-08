@@ -27,7 +27,7 @@ void Test_Onnx()
 
 	Mat image = imread(R"(D:\networksTest\class\default\1.jpg)");
 
-	//我的网络是64*64*3的1
+	//我的网络是64*64*3的
 	Mat floatMat = cv::dnn::blobFromImage(image, 1 / 255., Size(64, 64), Scalar(), true);
 
 	float* m_floatPtr;
